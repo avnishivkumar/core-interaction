@@ -1,8 +1,7 @@
 html {background-color: black}
-h1{color:INDIANRED; font-family:font-family: 'NordicaThin', Times, serif; font-size: 50px;}
-h2{color:white; font-family:font-family: 'NordicaThin', Times, serif;  font-size: 20px;}
-h3 {color:white; font-family:font-family: 'NordicaThin', Times, serif; font-size: 30px;}
+h1{color:INDIANRED;font-family: 'NordicaHairline.otf', Times, serif; font-size: 50px;}
+h2{color:white;font-family: 'NordicaHairline', Times, serif;  font-size: 20px;}
+h3 {color:white;font-family: 'NordicaHairline', Times, serif; font-size: 30px;}
 body {margin-left: 1in;margin-right: 0.5in;margin-top: 1in;}
-a{color:lightblue; font-family:font-family: 'NordicaThin', Times, serif; font-size: 20px;}
-a:hover {color:salmon; font-family:font-family: 'NordicaThin', Times, serif; font-size: 20px;}
-.st {color:INDIANRED; font-family:font-family: 'Benguiatbold', Times, serif; font-size: 50px;}
+a{color:lightblue; font-family: 'NordicaHairline', Times, serif; font-size: 20px;}
+a:hover {color:salmon; font-family: 'NordicaHairline', Times, serif; font-size: 20px;}
