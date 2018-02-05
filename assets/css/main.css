@@ -1,8 +1,10 @@
-h1{color:indianred; font-family: 'NordicaHairline', Times, serif; font-size: 50px;}
+h4{color:indianred; font-family: 'NordicaHairline', Times, serif; font-size: 50px;}
 h2{color:salmon; font-family: 'NordicaHairline', Times, serif; font-size: 30px;}
 h3 {color:grey; font-family: 'NordicaHairline', Times, serif; font-size: 30px;}
 body {margin-left: 2in;margin-right: 2in;margin-top: 3in;}
 a{color:lightblue; font-family: 'NordicaHairline', Times, serif; font-size: 20px;}
+h4{color:lightblue; font-family: 'NordicaHairline', Times, serif; font-size: 50px;}
+
 ul {
     margin: 0;
     padding: 0;
