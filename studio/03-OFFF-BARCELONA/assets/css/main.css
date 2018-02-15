@@ -1,0 +1,15 @@
+html {background-color: PALETURQUOISE;}
+h1{color:yellow;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 50px; }
+h2{color:yellow;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 30px;}
+h3 {color:white;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 30px;}
+body {margin-left: 1in;margin-right: 0.5in;margin-top: 1in;color:salmon;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 22px; padding: 100px;text-align: justify;}
+a{color:yellow; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px;}
+a:hover {color:salmon; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px;}
+.fig-1{
+  float: left;
+  padding-left: 0px;
+}
+.vid {
+  float: left;
+  padding-right: 20px;
+}
