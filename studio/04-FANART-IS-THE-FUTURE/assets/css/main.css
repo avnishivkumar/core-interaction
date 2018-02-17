@@ -1,0 +1,20 @@
+h1{color:INDIANRED; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 50px;}
+h2{color:grey; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 20px;}
+h3 {color:grey; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 30px;}
+body {margin-left: 1in;margin-right: 0.5in;margin-top: 1in;padding: 100px;text-align: justify;}
+a{color:lightblue; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px;}
+a:hover {color:salmon; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px;}
+.fig-1{
+  float: left;
+  padding-left: 0px;
+}
+
+.fig-2{
+  float: right;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+.vid {
+  float: left;
+  padding-right: 20px;
+}
