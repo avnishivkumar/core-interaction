@@ -1,0 +1,56 @@
+.tv1 {
+  position: absolute;
+  border: 2px solid black;
+  height: 250px;
+  width: 400px;
+}
+
+.tv2 {
+  position: relative;
+  border: 2px solid black;
+  height: 300px;
+  width: 400px;
+  left: 200px;
+  top: 200px;
+}
+
+.tv2 {
+  position: relative;
+  border: 2px solid black;
+  height: 300px;
+  width: 400px;
+  left: 200px;
+  top: 200px;
+}
+.tv3 {
+  position: relative;
+  border: 2px solid black;
+  height: 500px;
+  width: 600px;
+  left: 300px;
+  top: 50px;
+}
+
+.tv4 {
+  position: relative;
+  border: 2px solid black;
+  height: 300px;
+  width: 400px;
+  left: 300px;
+  top: -800px;
+}
+
+.tv5 {
+  position: relative;
+  border: 2px solid black;
+  height: 300px;
+  width: 480px;
+  margin: 10px;
+  left: 600px;
+  top: -1000px;
+}
+
+@media (max-width: 700px) {
+  .tv5,.tv1,.tv3 {
+    justify-content: space-between;
+}}
