@@ -1,0 +1,306 @@
+
+@font-face {
+font-family:hk-grotesk;
+src: url(assets/fonts/HKGrotesk-Medium.otf);}
+
+
+@font-face {
+font-family:hk-light;
+src: url(assets/fonts/HKGrotesk-Light.otf);}
+
+body, html {
+    height: 100%;
+}
+
+#cover1 {
+    background-image: src url(assets/media/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 250px;
+  font-family:hk-grotesk, tahoma, serif;
+  text-align: center;
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+}
+ a {
+   margin-top: 20px;
+   font-size: 100px;
+   font-family:hk-grotesk, tahoma, serif;
+   text-align: center;
+   color: white;
+   text-shadow:
+ 		-1px -1px 0 #000,
+ 		1px -1px 0 #000,
+ 		-1px 1px 0 #000,
+ 		1px 1px 0 #000;
+ }
+
+ .a4 img { display:none; height: 100%;; width: 100%; position:absolute;transition: 0.7s; }
+ .a4:hover img{ display:block; top: 900px; opacity: 0.7; transition: 0.7s;}
+ .a4:hover {color: white;}
+ .video {
+     width: 100%;
+     height: 100%;
+     opacity:0.5;
+}
+
+
+.a1 video { display:none; height: 200px;; width: 300px; position:absolute;transition: 0.7s;}
+.a1:hover video { display:block; top: 900px; opacity: 0.7; transition: 0.7s;  position: absolute;
+     float: right;
+     transition:all 0.3s;}
+.a1:hover {color: white;}
+
+
+
+
+h7 {
+  margin-top: 40px;
+  font-size: 150px;
+  font-family:hk-grotesk, tahoma, serif;
+  text-align: center;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:white;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:hk-grotesk, tahoma, serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:white;
+    color:  palegreen;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: white;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: block;
+}
+
+a.back {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  position: absolute;
+  font-family: Roboto;serif;
+  top: 180px;
+  left: 490px;
+  text-align: justify;
+  margin-right:20px;
+
+}
+
+ h6 {
+  font-size: 20px;
+  position: absolute;
+  font-family: Roboto;serif;
+  top: 320px;
+  left: 490px;
+  text-align: justify;
+  margin-right:20px;
+
+}
+
+h4 {
+  font-size: 20px;
+  position: absolute;
+  font-family: Roboto;serif;
+  top: 500px;
+  left: 490px;
+  text-align: justify;
+  margin-right:20px;
+
+}
+
+.img11{
+  display: inline-block;
+
+}
+
+.floatright {
+  float: right;
+}
+.opacityless {
+  opacity: 0.6;
+}
+
+a:hover {
+  color: palegreen;
+}
+a.links {
+  font-size: 50px;
+}
+
+
+
+
+.block:hover {
+    border: 1px solid black;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.container{
+  width: 900px;
+  height: 800px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  background-color: white;
+position: relative;
+}
+.img1 {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+}
+
+
+.img2 {
+
+  position: absolute;
+  top: 300px;
+  left:-10px;
+  width: 300px;
+  height: 250px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+}
+
+.img3 {
+
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 300px;
+  height: 250px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+}
+
+#vid1 {
+  width: 600px;
+  height: 400px;
+  opacity: 0.5;
+}
+
+#vid2 {
+  width: 800px;
+  height: 400px;
+  opacity: 0.5;
+}
+
+
+#pic1 {
+  width: 300px;
+  height: 400px;
+  opacity: 0.5;
+}
+
+.img4 {
+
+  position: absolute;
+  top: 100px;
+  left: -80px;
+  width: 300px;
+  height: 250px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+}
+
+#pic2 {
+  width: 500px;
+  height: 400px;
+  opacity: 0.5;
+}
+
+.img1:hover {
+     filter: grayscale(0%);
+     -webkit-filter: grayscale(0%);
+     opacity: 1.3;
+}
+
+.img2:hover {
+     filter: grayscale(0%);
+     -webkit-filter: grayscale(0%);
+     opacity: 1.3;
+}
+
+.img3:hover {
+     filter: grayscale(0%);
+     -webkit-filter: grayscale(0%);
+     opacity: 1.3;
+}
+
+.img4:hover {
+     filter: grayscale(0%);
+     -webkit-filter: grayscale(0%);
+     opacity: 1.3;
+}
+
+.floatright {
+  float: right;
+  display: inline-block;
+  margin: 10px;
+}
+.floatleft {
+  float: right;
+  display: inline-block;
+  margin: 10px;
+}
+
+.space {
+  margin:20px;
+  float: right;
+}

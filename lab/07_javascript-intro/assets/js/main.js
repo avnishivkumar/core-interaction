@@ -114,6 +114,69 @@ console.log("saySomeMessage('hello'):")
 saySomeMessage('hello');
 saySomeMessage('goodbye');
 
-var addNumbers = function(num1, num2) {
-  return num1 + num2
+//var x = myFunction(a, b);
+//function myFunction (a, b) {
+    //return a * b;
+
+  //enter into console-  myFunction (any number, any number)
+
+                 // Function returns the product of a and b
+
+
+function squareNumber(a) {
+   return (a, 3);
+}
+
+function squareNumber(a) {
+   return a * a;
+}
+
+var me = { name:'avni',
+age:19,
+nativeNewYorker:false,
+};
+
+var squared = function (number) {
+  return number * number;
+}
+
+
+var describeMe= function (me) {
+  return 'my name is' + me.name + '!' + 'I am' + me.age +'years old. If you asked me if I was a native New Yorker, my response would be ' + me.nativeNewYorker;
+}
+
+console.log('');
+
+//Conditional statements
+
+console.log('Conditional statements-');
+
+if (me.age > 21) {
+  console.log('party time')
+} else if (me.age < 5)
+{ console.log('why are u here') }
+
+else {
+  console.log('not quite yet')
+}
+
+//loop
+console.log('loops-');
+var hamburgers = 0;
+for(var i = 0; hamburgers < 10; i++) {
+  console.log(hamburgers + 'hamburger(s)');
+  hamburgers++;
+}
+
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+console.log ( 'how many licks does it take to get to the center of a tootsie pop?')
+for (var licks = 1; licks <= 4; licks++) {
+  if (licks == 4) {
+    console.log('CRUNCH!')
+  }  else {
+  console.log(licks)
+}
 }
