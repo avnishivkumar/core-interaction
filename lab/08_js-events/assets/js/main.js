@@ -29,23 +29,35 @@ block1.addEventListener('click', function () {
   }
 
 })
-// BLOCK 2 EVENT LISTENER
-var block2 = document.querySelector('.block-2');
-var block2isActive = false;
-block2.addEventListener('click', function () {
-    if (block2isActive) {
-        block2.classList.add('is-active');
-    } else {
-        block2.classList.remove('is-active');
-    }
-    block2isActive = !block2isActive;
+
+var block2 = document.querySelector('.block-2')
+var block2isActive = false
+block2.addEventListener ('click', function () {
+  if (block2isActive) {
+ block2.classList.add('is-active')
+} else {
+  block2classList.remove ('is-active')
+}
+block2isActive = !block2isActive
 })
 
-// WINDOW EVENT LISTENER
-window.addEventListener('click', function (event) {
-    var dot = document.createElement('div');
-    dot.classList.add('dot');
-    dot.style.top = event.pageY + 'px';
-    dot.style.left = event.pageX + 'px';
-    document.body.appendChild(dot);
+//window event addEventListener
+window.addEventListener ('click', function (event){
+  var dot = document.createElement ('div')
+  dot.classList.add ('dot')
+  dot.style.top = event.pageY + 'px'
+  dot.style.left = event.pageX + 'px'
+
+  document.body.appendChild(dot)
 })
+
+
+
+
+  console.log( 'block 1 has been clicked')
+
+
+  ///////////
+
+
+  
