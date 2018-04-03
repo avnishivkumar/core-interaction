@@ -1,10 +1,5 @@
 
 @font-face {
-font-family:hk-grotesk;
-src: url(assets/fonts/HKGrotesk-Medium.otf);}
-
-
-@font-face {
 font-family:hk-light;
 src: url(assets/fonts/HKGrotesk-Light.otf);}
 
@@ -57,21 +52,11 @@ h1 {
  		1px 1px 0 #000;
  }
 
- .a4 img { display:none; height: 100%;; width: 100%; position:absolute;transition: 0.7s; }
+
  .a4:hover img{ display:block; top: 900px; opacity: 0.7; transition: 0.7s;}
  .a4:hover {color: white;}
- .video {
-     width: 100%;
-     height: 100%;
-     opacity:0.5;
-}
 
 
-.a1 video { display:none; height: 200px;; width: 300px; position:absolute;transition: 0.7s;}
-.a1:hover video { display:block; top: 900px; opacity: 0.7; transition: 0.7s;  position: absolute;
-     float: right;
-     transition:all 0.3s;}
-.a1:hover {color: palegreen;}
 
 
 
@@ -173,8 +158,10 @@ h4 {
 }
 
 a:hover {
-  color: palegreen;
+  text-decoration: line-through;
+  transition: ease;
 }
+
 a.links {
   font-size: 50px;
 }
@@ -186,13 +173,7 @@ a.links {
     border: 1px solid black;
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: green;
-    border-radius: 50%;
-    position: absolute;
-}
+
 
 .container{
   width: 900px;
@@ -245,11 +226,20 @@ position: relative;
   left: 0px;
   width: 300px;
   height: 250px;
+  opacity: 0.5;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 
 }
 
+.move:hover {
+     filter: grayscale(0%);
+     -webkit-filter: grayscale(0%);
+     opacity: 1.0;
+     transition: 1s;
+
+
+}
 
 .img2 {
 
@@ -276,127 +266,130 @@ position: relative;
 }
 
 #vid1 {
-    position: absolute;
+    position: relative;
   width: 600px;
   height: 400px;
-  opacity: 0.5;
+
 }
 
 #vid2 {
-    position: absolute;
+    position: relative;
   width: 800px;
   height: 400px;
-  opacity: 0.5;
+
 }
 
 #vid3 {
-    position: absolute;
+    position: relative;
   width: 900px;
   height: 600px;
-  opacity: 0.5;
+
 }
 
 #vid16 {
-  position: absolute;
+  position: relative;
   width: 560px;
   height: 600px;
-  opacity: 0.5;
+
   top:100px;
 }
 
 #vid5 {
-    position: absolute;
+    position: relative;
   width: 400px;
   height: 300px;
-  opacity: 0.5;
+
   top:20px;
-  right: -700px;
+  right: -500px;
 }
 #vid6 {
-    position: absolute;
+    position: relative;
   width: 700px;
   height: 400px;
-  opacity: 0.5;
+
   top:500px;
   right: -500px;
 }
 #vid7 {
-    position: absolute;
+    position: relative;
   width: 400px;
   height: 200px;
-  opacity: 0.5;
+
   top:580px;
+  left:-20px;
 }
 #vid8 {
-    position: absolute;
+  position: relative;
   width: 400px;
   height: 300px;
-  opacity: 0.5;
-  top:0px;
+
+  top:-20px;
   right: 100px;
 }
 #vid9 {
-    position: absolute;
+    position: relative;
   width: 200px;
   height: 300px;
-  opacity: 0.5;
+
   top:300px;
   right: 100px;
 }
 #vid10 {
+  position: relative;
   width: 900px;
   height: 300px;
-  opacity: 0.5;
+
   top:400px;
 }
 #vid11 {
-    position: absolute;
-  width: 900px;
-  height: 300px;
-  opacity: 0.5;
+    position: relative;
+  width: 400px;
+  height: 200px;
+
   top:1000px;
+  left: 200px;
 }
 #vid12 {
-    position: absolute;
+    position: relative;
   width: 900px;
   height: 300px;
-  opacity: 0.5;
+
   top:800px;
   right: 300px;
 }
 #vid13 {
-    position: absolute;
+    position: relative;
   width: 900px;
   height: 400px;
-  opacity: 0.5;
+
   top:860px;
-  left: 400px;
+  left: 300px;
 }
 #vid14 {
-    position: absolute;
+    position: relative;
   width: 500px;
   height: 300px;
-  opacity: 0.5;
+
   top:1200px;
   left: -100px;
 
 
 }
 #vid15 {
-    position: absolute;
+    position: relative;
   width: 900px;
   height: 300px;
-  opacity: 0.5;
+
   top:1200px;
   left: 300px;
 }
 #vid17 {
-    position: absolute;
+position: relative;
   width: 500px;
   height: 400px;
-  opacity: 0.5;
-  left: 400px;
-  top: 300px;
+
+  left: 600px;
+  top: 100px;
 }
 
 #pic1 {
@@ -438,14 +431,7 @@ position: relative;
      width: 600px;
 }
 
-.move:hover {
-     filter: grayscale(0%);
-     -webkit-filter: grayscale(0%);
-     opacity: 1.3;
-     opacity: 1;
-     height: 1200px;
-     width: 600px;
-}
+
 
 
 .img2:hover {
@@ -484,65 +470,339 @@ position: relative;
 
 #follower {
   opacity: 0.4;
-  left:0px;
-   top:200px;
+  left:400px;
+   top:400px;
+   transform: scale(0.5);
    height: 200px;
    width:200px;
      position: absolute;
      float: left;
-     transition:all 0.3s;
+     transition:all 1.7s;
 
 }
 
 #follower2
 {
   opacity: 0.4;
-  left:500px;
-  top:200px;
+  left:400px;
+   top:400px;
   transform: scale(0.5);
     position: absolute;
     float: left;
-    transition:all 0.2s;
+    transition:all 2s;
 }
 #follower3
 {
   opacity: 0.4;
-  left:200px;
-  top:400px;
+  left:400px;
+   top:400px;
   transform: scale(0.8);
     position: absolute;
     float: left;
-    transition:all 0.2s;
+    transition:all 2s;
 }
 #follower4
 {
   opacity: 0.4;
-  left:500px;
-  top:100px;
-  transform: scale(0.5);
+  left:400px;
+   top:400px;
+  transform: scale(0.4);
     position: absolute;
     float: left;
-    transition:all 0.2s;
+    transition:all 0.7s;
 }
 
 #follower5
 {
   opacity: 0.4;
-  left:-90px;
-  top:400px;
+  left:400px;
+   top:400px;
   transform: scale(0.5);
     position: absolute;
     float: left;
-    transition:all 0.2s;
+    transition:all 2s;
 }
 
 #follower6
 {
   opacity: 0.4;
-  left:500px;
-  top:700px;
+  left:400px;
+   top:400px;
   transform: scale(0.9);
     position: absolute;
     float: left;
-    transition:all 0.2s;
+    transition:all 1s;
+}
+
+#follower7
+{
+  opacity: 0.4;
+  left:400px;
+   top:400px;
+  transform: scale(0.9);
+    position: absolute;
+    float: left;
+    transition:all 0.5s;
+}
+
+
+#follower8
+{
+  opacity: 0.4;
+  left:400px;
+   top:400px;
+  transform: scale(0.9);
+    position: absolute;
+    float: left;
+    transition:all 1s;
+}
+
+#follower9
+{
+  opacity: 0.4;
+  left:400px;
+   top:400px;
+  transform: scale(0.5);
+    position: absolute;
+    float: left;
+    transition:all 1s;
+}
+
+#follower10
+{
+  opacity: 0.4;
+  left:400px;
+   top:400px;
+  transform: scale(0.5);
+    position: absolute;
+    float: left;
+    transition:all 2s;
+}
+
+.movebig {
+  transform: scale(0.6);
+}
+
+#fa1 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:120px;
+left: -140px;
+}
+
+
+#fa2 {
+  position: relative;
+width: 600px;
+height: 800px;
+top:-200px;
+left: 400px;
+}
+
+#fa3 {
+  position: relative;
+width: 300px;
+height: 400px;
+top:-120px;
+left: 560px;
+}
+
+#fa5 {
+  position: relative;
+width: 250px;
+height: 390px;
+top:400px;
+left: 300px;
+}
+
+#fa4 {
+  position: relative;
+width: 300px;
+height: 550px;
+top:500px;
+left: 680px;
+}
+
+#fa6 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:400px;
+left: 0px;
+}
+
+#fa7 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:-10px;
+left: 130px;
+}
+
+#fa8 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:1200px;
+left: 740px;
+}
+
+#fa9 {
+  position: relative;
+width: 220px;
+height: 350px;
+top:940px;
+left: 160px;
+}
+
+#fa10 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:850px;
+left: -100px;
+}
+
+#fa11 {
+  position: relative;
+width: 500px;
+height: 600px;
+top:800px;
+left: 340px;
+}
+
+#fa12 {
+  position: relative;
+width: 200px;
+height: 300px;
+top:1200px;
+left: 500px;
+}
+
+#fa13 {
+  position: relative;
+width: 300px;
+height: 460px;
+top:1300px;
+left: 150px;
+}
+#fa14 {
+  position: relative;
+width: 300px;
+height: 400px;
+top:1200px;
+left: -200px;
+}
+
+#p1 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:120px;
+left: -140px;
+}
+
+
+#p2 {
+  position: relative;
+width: 300px;
+height: 450px;
+top:-30px;
+left: 500px;
+}
+
+#p3 {
+  position: relative;
+width: 300px;
+height: 400px;
+top:0px;
+left: 740px;
+}
+
+#p5 {
+  position: relative;
+width: 250px;
+height: 380px;
+top:430px;
+left: 450px;
+}
+
+#p4 {
+  position: relative;
+width: 300px;
+height: 400px;
+top:460px;
+left: 680px;
+}
+
+#p6 {
+  position: relative;
+width: 300px;
+height: 450px;
+top:500px;
+left: 0px;
+}
+
+#p7 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:-10px;
+left: 130px;
+}
+
+#p8 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:1200px;
+left: 740px;
+}
+
+#p9 {
+  position: relative;
+width: 220px;
+height: 350px;
+top:840px;
+left: 800px;
+}
+
+#p10 {
+  position: relative;
+width: 300px;
+height: 500px;
+top:850px;
+left: -100px;
+}
+
+#p11 {
+  position: relative;
+width: 450px;
+height: 600px;
+top:800px;
+left: 340px;
+}
+
+#p12 {
+  position: relative;
+width: 200px;
+height: 300px;
+top:1400px;
+left: 500px;
+}
+
+#p13 {
+  position: relative;
+width: 300px;
+height: 410px;
+top:1300px;
+left: 190px;
+}
+#p14 {
+  position: relative;
+width: 300px;
+height: 400px;
+top:1300px;
+left: -150px;
 }
