@@ -7,12 +7,30 @@ body, html {
     height: 100%;
 }
 
+.vid {
+  float: left;
+  margin-right: 10px;
+  margin-top: -5px;
+}
 #cover1 {
     background-image: src url(assets/media/cover.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
+#small1 {
+  font-size: 30px;
+}
+
+#small2 {
+  font-size: 30px;
+}
+
+#small3 {
+  font-size: 40px;
+  text-align: center;
+
+}
 h1 {
   margin-top: 40px;
   font-size: 250px;
