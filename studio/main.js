@@ -95,15 +95,3 @@ $(document).on('mousemove', function(e) {
         height: '+=5px'
     });
 });
-
-$('.move').click(function(){
-  if($(this).hasClass('move')) {
-    $(this).addClass('movebig');
-  } else {
-$(this).addClass('move');
-};
-});
-
-
-
-//

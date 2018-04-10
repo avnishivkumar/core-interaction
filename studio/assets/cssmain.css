@@ -714,7 +714,7 @@ left: -200px;
 }
 
 #p1 {
-  position: relative;
+  position: absolute;
 width: 300px;
 height: 500px;
 top:120px;
@@ -823,4 +823,36 @@ width: 300px;
 height: 400px;
 top:1300px;
 left: -150px;
+}
+
+#mydiv {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.image {
+	width: 800px;
+	height: 800px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container1 {
+
+  width: 100%;
+    height: 100%;
+    transform:
+
+}
+
+#rando {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+  top: 100px;
+  left: 10px;
 }
