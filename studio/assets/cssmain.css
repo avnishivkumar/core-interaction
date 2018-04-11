@@ -832,10 +832,10 @@ left: -150px;
 }
 
 .image {
-	width: 800px;
-	height: 800px;
-	display: inline-block;
-	position: absolute;
+	width: 900px;
+	height: 900px;
+  position: absolute;
+
 	top: 0;
 	left: 0;
 }

@@ -6,17 +6,18 @@ var images = ['assets/media/snl1.png', 'assets/media/snl5.png', 'assets/media/sn
 
 window.addEventListener('mousemove', function() {
 	counter++
-	if (counter % 100 === 0) {
+	if (counter % 50 === 0) {
 		var image = document.createElement('img')
 		image.classList.add('image')
 		container.appendChild(image)
-		image.style.top = Math.random() * 1000 + 'px'
-		image.style.left = Math.random() * 1000 + 'px'
+		image.style.top = Math.random() * 600 + 'px'
+		image.style.left = Math.random() * 800 + 'px'
     image.style.opacity = Math.random() * 0.7 + ''
-    //image.style.height = Math.random() * 1000 + 'px'
-  //  image.style.width = Math.random() * 1000 + 'px'
- image.style.transform = 'scale(' + Math.random() + ')'
- image.style.transform = 'rotate(' + Math.random() * 360 + 'deg)'
+    //image.style.height =  400 + 'px'
+  //image.style.width = 800 + 'px'
+ image.style.transform ='scale(' + Math.random() * 0.7 + ')rotate(' + Math.random() * 360 + 'deg)'
+
+
 		image.src = images[ Math.round( Math.random() * 2) ]
 	}
 ''
