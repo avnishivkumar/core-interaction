@@ -80,7 +80,9 @@ h1 {
 
 
 h7 {
-  margin-top: 40px;
+  margin-top: 70px;
+  position: relative;
+  top: 90px;
   font-size: 150px;
   font-family:hk-grotesk, tahoma, serif;
   text-align: center;
@@ -112,7 +114,19 @@ h7 {
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color:white;
-    color:  palegreen;
+
+}
+
+#snl {
+  top: 300px;
+  position: absolute;
+}
+
+#snlrightcol {
+  top: 300px;
+  left: 667px;
+  position: absolute;
+  margin-left: 20px;
 }
 
 /* Add an active class to highlight the current page */
@@ -130,23 +144,15 @@ a.back {
   font-size: 40px;
 }
 
-h3 {
-  font-size: 20px;
-  position: absolute;
-  font-family: Roboto;
-  top: 180px;
-  left: 490px;
-  text-align: justify;
-  margin-right:20px;
+hn {
+
 
 }
 
  h6 {
   font-size: 20px;
   position: absolute;
-  font-family: Roboto;serif;
-  top: 320px;
-  left: 490px;
+  font-family: 'Roboto', sans-serif;
   text-align: justify;
   margin-right:20px;
 
@@ -155,7 +161,7 @@ h3 {
 h4 {
   font-size: 20px;
   position: absolute;
-  font-family: Roboto;serif;
+  font-family: 'Roboto', sans-serif;
   top: 500px;
   left: 490px;
   text-align: justify;
@@ -184,6 +190,23 @@ a.links {
   font-size: 50px;
 }
 
+.exlink {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+
+}
+.exlinkcon {
+  border-style: solid;
+  height: 50px;
+  width: 1600px;
+  position:absolute;
+  top: 1100px;
+  padding-bottom: 20px;
+}
 
 
 
@@ -477,15 +500,74 @@ position: relative;
 
 .floatright {
   float: right;
-  display: inline-block;
-  margin: 10px;
+  margin: 30px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  opacity: 0.3;
+}
+#human {
+  position: absolute;
+  margin: 30px;
+  top: 60px;
+  left: 260px;
+
+}
+
+#dis1 {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+}
+
+#dis2 {
+  position: absolute;
+  top: 700px;
+  left: 800px;
+}
+
+#dis3 {
+  position: absolute;
+  top: -100px;
+  left: -600px;
+}
+
+#dis4 {
+  position: absolute;
+  top: -100px;
+  left: -600px;
+}
+
+#dis5 {
+  position: absolute;
+  top: 100px;
+  left: -600px;
+}
+#dis6 {
+  position: absolute;
+  top: -500px;
+  left: -150px;
 }
 .floatleft {
   float: right;
-  display: inline-block;
-  margin: 10px;
+  position: absolute;
+  margin: 30px;
+  top: 500px;
+  left: 600px;
+  opacity: 0.3;
 }
 
+.floatright:hover {
+
+     opacity: 1.3;
+     z-index: 100;
+}
+
+.floatleft:hover {
+
+     opacity: 1.3;
+     z-index: 100;
+}
 .space {
   margin:20px;
   float: right;
@@ -860,4 +942,24 @@ left: -150px;
 
   top: 100px;
   left: 10px;
+}
+
+.column {
+  float: left;
+width: 35%;
+margin: 20px;
+font-size: 20px;
+z-index: 100;
+position: relative;
+margin-left: 200px;
+
+
+font-family: 'Roboto', sans-serif;
+
+text-align: justify;
+
+
+}
+#rightcol {
+  margin-left: 20px;
 }
