@@ -206,6 +206,7 @@ a.links {
   position:absolute;
   top: 1100px;
   padding-bottom: 20px;
+  margin-top: 60px;
 }
 
 
@@ -547,6 +548,17 @@ position: relative;
   position: absolute;
   top: -500px;
   left: -150px;
+}
+
+#dis11 {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+#dis10 {
+  position: absolute;
+  top: 500px;
+  left: 550px;
 }
 .floatleft {
   float: right;
