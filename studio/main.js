@@ -95,3 +95,20 @@ $(document).on('mousemove', function(e) {
         height: '+=5px'
     });
 });
+
+var mouseX = 0, mouseY = 0, limitX = 40-15, limitY = 40-15;
+$(window).mousemove(function(e){
+   mouseX = Math.min(e.pageX, limitX);
+   mouseY = Math.min(e.pageY, limitY);
+});
+
+
+var follower = $("#cover4");
+var xp = 1000, yp = 1000;
+var loop = setInterval(function(){
+
+    xp += (mouseX - xp) / 1;
+    yp += (mouseY - yp) / 1;
+    follower.css({left:xp, top:yp, right:xp, bottom:yp});
+
+}, 100);
