@@ -1,6 +1,6 @@
 console.log('hello world')
 // Insert your actual API request URL below
-fetch('http://api.openweathermap.org/data/2.5/weather?zip=10009&APPID=a2e3b22435f68a410cf1681ee268cd47&units=metric')
+fetch('https://api.openweathermap.org/data/2.5/weather?zip=10009&APPID=a2e3b22435f68a410cf1681ee268cd47&units=metric')
     .then(function(response) {
         // Get the response and format it to JSON
         return response.json();

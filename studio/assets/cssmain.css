@@ -623,6 +623,7 @@ position: relative;
   right: 10px;
   top: 20px;
   opacity: 0.3;
+  
 }
 #human {
   position: absolute;
@@ -676,6 +677,12 @@ position: relative;
   position: absolute;
   top: 500px;
   left: 550px;
+}
+
+#dis14 {
+  position: absolute;
+  top: 530px;
+  left: 530px;
 }
 .floatleft {
   float: right;
