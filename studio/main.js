@@ -104,11 +104,35 @@ $(window).mousemove(function(e){
 
 
 var follower = $("#cover4");
-var xp = 1000, yp = 1000;
-var loop = setInterval(function(){
+var xp = 100, yp = 1000;
+$(document).on('mousemove', function(e) {
 
     xp += (mouseX - xp) / 1;
     yp += (mouseY - yp) / 1;
-    follower.css({left:xp, top:yp, right:xp, bottom:yp});
+    follower.css({left:xp, top:yp});
 
-}, 100);
+});
+
+// $(document).on('mousemove', function(e) {
+//     $("#cover4").css({
+//       left:  e.pageX -600,
+//       top:   e.pageY - 420,
+//         width: '+=5px',
+//         height: '+=5px'
+//     });
+// });
+// top: -100px;
+// left: 120px;
+$( function() {
+    $( ".move" ).draggable();
+  } );
+
+  $( function() {
+      $( ".floatleft" ).draggable();
+    } );
+
+    $( function() {
+        $( ".floatright" ).draggable();
+      } );
+
+      
