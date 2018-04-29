@@ -96,6 +96,15 @@ $(document).on('mousemove', function(e) {
     });
 });
 
+$(document).on('mousemove', function(e) {
+    $('#follower11').css({
+      left:  e.pageX +300,
+      top:   e.pageY -100,
+        width: '+=5px',
+        height: '+=5px'
+    });
+});
+
 var mouseX = 0, mouseY = 0, limitX = 40-15, limitY = 40-15;
 $(window).mousemove(function(e){
    mouseX = Math.min(e.pageX, limitX);
@@ -135,4 +144,54 @@ $( function() {
         $( ".floatright" ).draggable();
       } );
 
-      
+      $( function() {
+          $( ".original" ).draggable();
+        } );
+
+
+
+      // HELPER FUNCTION: function to pad numbers
+      Number.prototype.pad = function(size) {
+          var s = String(this);
+          while (s.length < (size || 2)) {s = "0" + s;}
+        	return s;
+      }
+
+      // get todays date
+      var date = new Date();
+      var day = date.getDay();
+      var dateString = date.getFullYear() + '-' + (date.getMonth() + 1).pad(2) + '-' + date.getDate().pad(2);
+
+      // Shows: sun, mon, tues, wed, thurs, fri, sat
+      var showIds = [1371, 1850, 6393, 1825, 15327, 30416, 18198];
+      var showId = showIds[day];
+
+      // Get Show ID for today
+      fetch('https://api.tvmaze.com/shows/' + showId)
+          .then(function(response) {
+              // Get the response and format it to JSON
+              return response.json();
+          })
+          .then(function(jsonData) {
+              // log the data
+                  render(jsonData);
+                  console.log(jsonData);
+              });
+
+
+      // Insert your actual API request URL below
+      fetch('https://api.tvmaze.com/shows/' + showId + '/episodesbydate?date=' + dateString)
+          .then(function(response) {
+              // Get the response and format it to JSON
+              return response.json();
+          })
+          .then(function(jsonData) {
+              // log the data
+              //render(jsonData);
+              console.log(jsonData);
+          });
+
+          var originalHome = document.querySelector('.originalhome')
+
+          function render(data) {
+            originalHome.src=data.image.original }

@@ -12,7 +12,7 @@ var day = date.getDay();
 var dateString = date.getFullYear() + '-' + (date.getMonth() + 1).pad(2) + '-' + date.getDate().pad(2);
 
 // Shows: sun, mon, tues, wed, thurs, fri, sat
-var showIds = [1371, 1850, 6393, 1825, 15327, 30416, 18198];
+var showIds = [49, 1850, 6393, 1825, 15327, 30416, 18198];
 var showId = showIds[day];
 
 // Get Show ID for today
@@ -46,6 +46,7 @@ var channelSpan = document.querySelector('.channel')
 var timeSpan = document.querySelector('.time')
 var originalSpan = document.querySelector('.original')
 var airSpan = document.querySelector('.air')
+var originalHome = document.querySelector('.originalhome')
 
 //var htag = document.querySelector('h109')
 function render(data) {
@@ -80,14 +81,17 @@ timeSpan.innerText=data.schedule.time
 console.log (data.image.original)
 
 
-document.body.style.backgroundColor = 'hsl('+ data.rating.average +',20%,50%)'
-nameSpan.style.fontSize = (50 * data.rating.average) +'px'
+document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average +',20%,50%)'
+nameSpan.style.fontSize = (30 * data.rating.average) +'px'
 
 //insert temp
 originalSpan.src=data.image.original
+
 //originalSpan.transition=data.runtime
 
 //set animation duration of weather vane based on wind windSpeed
 
-originalSpan.style.animationDuration = data.runtime / 2 + 's'
+originalSpan.style.animationDuration = data.runtime / 5 + 's'
+
+originalHome.src=data.image.original
 }
