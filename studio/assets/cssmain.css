@@ -76,15 +76,15 @@ h1 {
 
 @keyframes nudge {
   0%, 100% {
-    transform: translate(800px, -10px);
+    transform: translate(800px, 0px);
   }
 
-  50% {
-    transform: translate(100px, -60px);
+  100% {
+    transform: translate(100px, 0px);
   }
 
-  80% {
-    transform: translate(150px, 10px);
+  100%{
+    transform: translate(150px, 0px);
   }
 }
 
@@ -110,11 +110,12 @@ h101 {
 
 .name {
   top:60px;
-  left: 100px;
+  left: 250px;
   position: absolute;
   font-family: "source-sans-pro",sans-serif;
   font-weight: 200;
   line-height: 180px;
+
 }
 .channel {
   font-family: "source-sans-pro",sans-serif;

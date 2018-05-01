@@ -12,7 +12,7 @@ var day = date.getDay();
 var dateString = date.getFullYear() + '-' + (date.getMonth() + 1).pad(2) + '-' + date.getDate().pad(2);
 
 // Shows: sun, mon, tues, wed, thurs, fri, sat
-var showIds = [49, 1850, 6393, 1825, 15327, 30416, 18198];
+var showIds = [49, 1850, 58, 1825, 1864, 30416, 18198];
 var showId = showIds[day];
 
 // Get Show ID for today
@@ -81,7 +81,7 @@ timeSpan.innerText=data.schedule.time
 console.log (data.image.original)
 
 
-document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average +',20%,50%)'
+document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
 nameSpan.style.fontSize = (30 * data.rating.average) +'px'
 
 //insert temp
@@ -91,7 +91,7 @@ originalSpan.src=data.image.original
 
 //set animation duration of weather vane based on wind windSpeed
 
-originalSpan.style.animationDuration = data.runtime / 5 + 's'
+originalSpan.style.animationDuration = data.runtime / 10 + 's'
 
 originalHome.src=data.image.original
 }
