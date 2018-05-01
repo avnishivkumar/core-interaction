@@ -1305,6 +1305,17 @@ left: -150px;
 	left: 0;
 }
 
+#snltitle {
+  margin-top: 70px;
+  position: relative;
+  top: 90px;
+  font-size: 150px;
+  font-family: "dazzle-unicase",sans-serif;
+  text-align: center;
+  color: black;
+  line-height: 180px;
+  display: none;
+}
 .container1 {
 
   width: 100%;
@@ -1391,8 +1402,11 @@ text-align: justify;
   }
   #small3 {
     top: -90px;
-    line-height: 85px;
+    line-height: 65px;
     font-size: 50px;
+    margin: 30px;
+    padding: 50px;
+
   }
   .move {
     transform: scale(2);
@@ -1424,7 +1438,7 @@ text-align: justify;
   }
   #vid8 {
     top: 70px;
-    left: 100px;
+    left: 200px;
   }
   #vid9 {
     left: 300px;
@@ -1458,7 +1472,6 @@ text-align: justify;
     left: 430px;
     top: 1360px;
 
-
   }
   .dropbtn {
     left: 0px;
@@ -1473,6 +1486,90 @@ text-align: justify;
       border: none;
       z-index: 100;
   }
+  .column {
+    width: 590px;
+    font-size: 40px;
+    line-height: 30px;
+  }
+  #snl {
+    width: 590px;
+    font-size: 40px;
+    line-height: 30px;
+  }
 
+  .fcolumn {
+    font-size: 40px;
+    width: 590px;
+    font-size: 40px;
+    line-height: 30px;
+    top: -70px;
+  }
+
+
+  #rightcol {
+    font-size: 40px;
+    left: 170px;
+  }
+  #snlrightcol {
+    font-size: 40px;
+    left: 170px;
+    top: 1150px;
+  }
+
+  #frightcol {
+    font-size: 40px;
+    left: 210px;
+    top:1550px;
+  }
+  .column:hover {
+    z-index: 100;
+  }
+  #dis3{
+    top:-800px;
+    left: -100px;
+
+  }
+  #dis2{
+    top:1300px;
+    left: 300px;
+
+  }
+  #dis1{
+    top:1300px;
+    left: 300px;
+
+  }
+
+  #dis5{
+    top:100px;
+    left: 300px;
+
+  }
+.floatright{
+  top: 600px;
+}
+#dis10
+{
+  top: 1400px;
+}
+
+#dis14
+{
+  top: 1600px;
+  left: 20px;
+}
+h0 {top: 100px;
+}
+h7 {top: 100px;
+}
+.snltitle{
+  display: inline-block;
+  top: 100px;
+}
+.follower1 {
+  top: 1000px;
+  left: 0px;
+}
+}
 
 }
