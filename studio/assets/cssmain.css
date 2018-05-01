@@ -1022,13 +1022,13 @@ width: 1200px;
 
 #follower11
 {
-  width: 200px;
+  width: 350px;
 height: 400px;
 background-color: transparent;
   opacity: 0.4;
   left:600px;
    top:400px;
-  transform: scale(0.5);
+  transform: scale(0.6);
     position: absolute;
     float: left;
     transition:all 2s;
@@ -1376,3 +1376,21 @@ text-align: justify;
 #rightcol {
   margin-left: 20px;
 }
+.buton123 {
+  position: absolute;
+  background-color: transparent;
+  height:700px;
+  width: 400px;
+  display: none;
+}
+  @media (max-width: 480px)
+{
+  .cover1 {
+    top: -100px;
+  }
+  .buton123 {
+    background-color: transparent;
+    height:700px;
+    width: 400px;
+    position: absolute;
+  }

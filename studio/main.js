@@ -163,7 +163,7 @@ $( function() {
       var dateString = date.getFullYear() + '-' + (date.getMonth() + 1).pad(2) + '-' + date.getDate().pad(2);
 
       // Shows: sun, mon, tues, wed, thurs, fri, sat
-      var showIds = [1371, 1850, 6393, 1825, 15327, 30416, 18198];
+      var showIds = [49, 1850, 58, 1825, 1864, 30416, 18198];
       var showId = showIds[day];
 
       // Get Show ID for today
