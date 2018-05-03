@@ -23,7 +23,7 @@ fetch('https://api.tvmaze.com/shows/' + showId)
     })
     .then(function(jsonData) {
         // log the data
-            render(jsonData);
+            renderShow(jsonData);
             console.log(jsonData);
         });
 
@@ -36,7 +36,7 @@ fetch('https://api.tvmaze.com/shows/' + showId + '/episodesbydate?date=' + dateS
     })
     .then(function(jsonData) {
         // log the data
-        //render(jsonData);
+        renderEpisode(jsonData);
         console.log(jsonData);
     });
 
@@ -47,51 +47,79 @@ var timeSpan = document.querySelector('.time')
 var originalSpan = document.querySelector('.original')
 var airSpan = document.querySelector('.air')
 var originalHome = document.querySelector('.originalhome')
+var epinameSpan = document.querySelector('.epinamespan')
+var dropdownContent1 = document.querySelector('.dropdown-content1')
+var dropdownContent2 = document.querySelector('.dropdown-content2')
+var episumSpan = document.querySelector('.episumspan')
+var episeasonSpan = document.querySelector('.episeasonspan')
+var epinoSpan = document.querySelector('.epinospan')
 
 //var htag = document.querySelector('h109')
-function render(data) {
+function renderShow(data) {
 
-//log the data in its entiertey
-console.log(data);
+  //log the data in its entiertey
+  console.log(data);
 
-//log the current temp
-console.log(data.name);
+  //log the current temp
+  console.log(data.name);
 
-//insert temp
-nameSpan.innerText=data.name
+  //insert temp
+  nameSpan.innerText=data.name
 
-//log wind windSpeed
-console.log (data.summary)
+  //log wind windSpeed
+  console.log (data.summary)
 
-//insert temp
-summarySpan.innerHTML=data.summary
+  //insert temp
+  summarySpan.innerHTML=data.summary
 
-console.log (data.network.name)
+  console.log (data.network.name)
 
-//insert temp
-channelSpan.innerText=data.network.name
+  //insert temp
+  channelSpan.innerText=data.network.name
 
-console.log (data.schedule.time)
+  console.log (data.schedule.time)
 
-//insert temp
-timeSpan.innerText=data.schedule.time
-
-
-
-console.log (data.image.original)
+  //insert temp
+  timeSpan.innerText=data.schedule.time
 
 
-document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
-nameSpan.style.fontSize = (30 * data.rating.average) +'px'
 
-//insert temp
-originalSpan.src=data.image.original
+  console.log (data.image.original)
 
-//originalSpan.transition=data.runtime
 
-//set animation duration of weather vane based on wind windSpeed
+  document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  nameSpan.style.fontSize = (30 * data.rating.average) +'px'
+  dropdownContent1.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  dropdownContent2.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
 
-originalSpan.style.animationDuration = data.runtime / 10 + 's'
 
-originalHome.src=data.image.original
+
+
+  //insert temp
+  originalSpan.src=data.image.original
+
+  //originalSpan.transition=data.runtime
+
+  //set animation duration of weather vane based on wind windSpeed
+
+  originalSpan.style.animationDuration = data.runtime / 10 + 's'
+
+}
+
+
+//var htag = document.querySelector('h109')
+//var htag = document.querySelector('h109')
+function renderEpisode(data) {
+
+  //log the data in its entiertey
+  console.log(data);
+
+  //log the current temp
+  console.log(data["0"].name);
+
+  //insert temp
+  epinameSpan.innerText= data["0"].name
+    episeasonSpan.innerText= data["0"].season
+      epinoSpan.innerText= data["0"].number
+        episumSpan.innerText= data["0"].summary
 }
