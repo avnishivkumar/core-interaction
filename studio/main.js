@@ -81,7 +81,7 @@ $(document).on('mousemove', function(e) {
 });
 $(document).on('mousemove', function(e) {
     $('#follower9').css({
-      left:  e.pageX +400,
+      left:  e.pageX -300,
       top:   e.pageY -300,
         width: '+=5px',
         height: '+=5px'
@@ -195,3 +195,5 @@ $( function() {
 
           function render(data) {
             originalHome.src=data.image.original }
+
+            // Shows: sun, mon, tues, wed, thurs, fri, sat
