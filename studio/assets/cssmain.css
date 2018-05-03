@@ -20,6 +20,7 @@ body, html {
 }
 
 #small1 {
+
   font-size: 30px;
 }
 
@@ -27,12 +28,20 @@ body, html {
   font-size: 30px;
 }
 
-#small3 {
-  font-size: 40px;
-  text-align: center;
+.small3 {
+  line-height: 55px;
   font-family: "jaf-domus",sans-serif;
   font-weight: 200;
-  line-height: 50px;
+  float: left;
+width: 70%;
+ text-align: justify;
+margin: 20px;
+font-size: 42px;
+z-index: 100;
+position: relative;
+margin-left: 15%;
+top: 60px;
+
 
 }
 h1 {
@@ -339,6 +348,7 @@ h0 {
 #snl {
   top: 300px;
   position: absolute;
+  display: none;
 }
 
 #snlrightcol {
@@ -1463,6 +1473,63 @@ text-align: justify;
   .a6 {
     line-height: 200px;
   }
+  .covercontainer{
+    visibility: hidden;
+  }
+  .cover1 {
+    transform: scale(2) rotate(-90deg);
+    top: 850px;
+  }
+  #follower1{
+    visibility: hidden;
+  }
+  #follower2{
+    visibility: hidden;
+  }
+  #follower3{
+    visibility: hidden;
+  }
+  #follower4{
+    visibility: hidden;
+  }
+  #follower5{
+    visibility: hidden;
+  }
+  #follower6{
+    visibility: hidden;
+  }
+  #follower7{
+    visibility: hidden;
+  }
+  #follower8{
+    visibility: hidden;
+  }
+  #follower9{
+    visibility: hidden;
+  }
+  #follower10{
+    visibility: hidden;
+  }
+  #follower{
+    visibility: hidden;
+  }
+
+  .originalhome{
+    visibility: hidden;
+  }
+  .floatleft {
+    transform: scale(1.5);
+  }
+
+  .floatright {
+    transform: scale(1.5);
+  }
+  blockquote {
+    font-size: 80px;
+    line-height: 100px;
+    text-align: left;
+  }
+
   #small3 {
     text-align: center;
     top: -90px;
@@ -1470,6 +1537,27 @@ text-align: justify;
     font-size: 50px;
     margin: 30px;
     padding: 50px;
+
+  }
+  h101 {
+    position: absolute;
+    top: 490px;
+    left: 420px;
+    font-size: 110px;
+     font-family: "source-sans-pro",sans-serif;
+    font-weight: 200;
+  }
+  .summary{
+  position: absolute;
+  width: 70%;
+  left: 340px;
+  top: 860px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 60px;
+    font-family: "source-sans-pro",sans-serif;
+    font-weight: 200;
+    margin-bottom: 200px;
 
   }
   #small4 {
@@ -1559,34 +1647,53 @@ text-align: justify;
       border: none;
       z-index: 100;
   }
+
   .column {
-    width: 590px;
-    font-size: 40px;
-    line-height: 30px;
+
+    width: 1090px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  #snltitle {
+    height: 150px;
+    width: 900px;
+    top: -2000px;
+    display: block;
   }
   #snl {
-    width: 590px;
-    font-size: 40px;
-    line-height: 30px;
+    width: 1090px;
+    font-size: 60px;
+    line-height: 60px;
+    display: block;
   }
 
   .fcolumn {
-    font-size: 40px;
-    width: 590px;
-    font-size: 40px;
-    line-height: 30px;
-    top: -70px;
+    left: -100;
+    width: 1090px;
+    font-size: 60px;
+    line-height: 60px;
+
+  }
+  #frightcolumn {
+    top:800px;
+    left: -100;
+    width: 1090px;
+    font-size: 60px;
+    line-height: 60px;
+
   }
 
 
   #rightcol {
-    font-size: 40px;
-    left: 170px;
+    font-size: 60px;
+    left: 0px;
+    line-height: 60px;
   }
   #snlrightcol {
-    font-size: 40px;
-    left: 170px;
-    top: 1150px;
+    top: 1600px;
+    font-size: 60px;
+    left: -10px;
+      line-height: 60px;
   }
 
   #frightcol {
@@ -1595,6 +1702,12 @@ text-align: justify;
     top:1550px;
   }
   .column:hover {
+    z-index: 100;
+  }
+  .snlcolumn:hover {
+    z-index: 100;
+  }
+  .fcolumn:hover {
     z-index: 100;
   }
   #dis3{
