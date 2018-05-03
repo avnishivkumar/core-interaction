@@ -137,6 +137,7 @@ top: 570px;
   font-size: 30px;
   font-family: "source-sans-pro",sans-serif;
   font-weight: 200;
+  margin-bottom: 200px;
 
 }
 .time {
@@ -342,7 +343,7 @@ h0 {
 
 #snlrightcol {
   top: 300px;
-  left: 720px;
+  left: 520px;
   position: absolute;
   margin-left: 50px;
 }
@@ -377,10 +378,30 @@ a.back {
     color: white;
     text-align: center;
     z-index: 100;
+    margin-top: 50px;
+
+}
+.foottext {
+
+  font-family: "jaf-domus",sans-serif;
+
+  font-weight: 200;
+  font-size: 30px;
+    position: fixed;
+    left: 600px;
+    bottom: -8px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    z-index: 100;
     margin-top: 30px;
+    text-decoration: none;
 
 }
 #foot{
+
     text-align: right;
     margin-right: 30px;
 }
@@ -774,7 +795,7 @@ position: relative;
   position: absolute;
   right: 10px;
   top: 20px;
-  opacity: 0.3;
+  opacity: 0.2;
 
 }
 #human {
@@ -842,7 +863,7 @@ position: relative;
   margin: 30px;
   top: -400px;
   left: 0px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .floatright:hover {
@@ -1353,20 +1374,28 @@ left: -150px;
   font-weight: 200;
   float: left;
 width: 35%;
-
+ text-align: justify;
 margin: 20px;
 font-size: 22px;
 z-index: 100;
 position: relative;
-margin-left: 200px;
+margin-left: 20px;
 top: 60px;
 
 
 
 
-text-align: justify;
 
 
+
+}
+
+blockquote {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .fcolumn {
@@ -1397,8 +1426,15 @@ text-align: justify;
 }
 #dis44
 {
-  top: 700px;
-  left: 50px;
+  top: 1000px;
+  left: 800px;
+  margin-bottom: 30px;
+}
+
+#dis42
+{
+  top: 1000px;
+  left: 800px;
   margin-bottom: 30px;
 }
 #dis111
@@ -1428,6 +1464,16 @@ text-align: justify;
     line-height: 200px;
   }
   #small3 {
+    text-align: center;
+    top: -90px;
+    line-height: 65px;
+    font-size: 50px;
+    margin: 30px;
+    padding: 50px;
+
+  }
+  #small4 {
+    text-align: center;
     top: -90px;
     line-height: 65px;
     font-size: 50px;

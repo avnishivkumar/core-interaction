@@ -6,7 +6,7 @@ var images = ['assets/media/snl1.png', 'assets/media/snl5.png', 'assets/media/sn
 
 window.addEventListener('mousemove', function() {
 	counter++
-	if (counter % 50 === 0) {
+	if (counter % 30 === 0) {
 		var image = document.createElement('img')
 		image.classList.add('image')
 		container.appendChild(image)
