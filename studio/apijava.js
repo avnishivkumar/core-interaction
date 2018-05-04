@@ -54,6 +54,8 @@ var episumSpan = document.querySelector('.episumspan')
 var episeasonSpan = document.querySelector('.episeasonspan')
 var epinoSpan = document.querySelector('.epinospan')
 
+
+
 //var htag = document.querySelector('h109')
 function renderShow(data) {
 
@@ -87,10 +89,16 @@ function renderShow(data) {
   console.log (data.image.original)
 
 
-  document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  //document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
   nameSpan.style.fontSize = (30 * data.rating.average) +'px'
   dropdownContent1.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
   dropdownContent2.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  nameSpan.style.color = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  document.body.style.color = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  episeasonSpan.style.color = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+
+
+
 
 
 
