@@ -138,15 +138,15 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 
 
 
-$(window).on('orientationchange', function(e) {
-  // alert('hello')
+$(window).on('orientationchange', function(event) {
+  //alert(event.aplha)
 
-  $('#deviceorientation').text(e.alpha)
+  $('#deviceorientation').text(event.alpha)
     $('#follower10').css({
-      left:  e.alpha +10
+      left:  event.alpha +10
     });
     $('#follower7').css({
-      left:  e.alpha + 40
+      left:  event.alpha + 40
     });
 });
 
