@@ -138,7 +138,8 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 
 
 
-$(document).on('deviceorientation', function(e) {
+window.addEventListener('deviceorientation', function(e) {
+
     $('#follower11').css({
       left:  e.beta +300,
       top:   e.gamma -100,
