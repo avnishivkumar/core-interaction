@@ -142,21 +142,21 @@ $(window).on('orientationchange', function(e) {
   // alert('hello')
 
     $('#follower11').css({
-      left:  e.alpha +300,
-      top:   e.gamma -100,
+      left:  e.alpha +30,
+      // top:   e.gamma -10,
         width: '+=5px',
         height: '+=5px'
     });
 
     $('#follower10').css({
-      left:  e.alpha +100,
-      top:   e.gamma -600,
+      left:  e.alpha +10,
+      // top:   e.gamma -60,
         width: '+=5px',
         height: '+=5px'
     });
     $('#follower7').css({
-      left:  e.alpha + 400,
-      top:   e.gamma -300,
+      left:  e.alpha + 40,
+      // top:   e.gamma -30,
         width: '+=5px',
         height: '+=5px'
     });
