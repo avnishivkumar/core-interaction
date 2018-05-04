@@ -138,23 +138,24 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 
 
 
-window.addEventListener('deviceorientation', function(e) {
-  alert('hello')
+$(window).on('orientationchange', function(e) {
+  // alert('hello')
+
     $('#follower11').css({
-      left:  e.beta +300,
+      left:  e.alpha +300,
       top:   e.gamma -100,
         width: '+=5px',
         height: '+=5px'
     });
 
     $('#follower10').css({
-      left:  e.beta +100,
+      left:  e.alpha +100,
       top:   e.gamma -600,
         width: '+=5px',
         height: '+=5px'
     });
     $('#follower7').css({
-      left:  e.beta + 400,
+      left:  e.alpha + 400,
       top:   e.gamma -300,
         width: '+=5px',
         height: '+=5px'
