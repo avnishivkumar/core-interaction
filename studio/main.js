@@ -141,7 +141,7 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 $(window).on('orientationchange', function(e) {
   // alert('hello')
 
-
+  $('#deviceorientation').text(e.alpha)
     $('#follower10').css({
       left:  e.alpha +10
     });
