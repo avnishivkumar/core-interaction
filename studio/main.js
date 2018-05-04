@@ -141,24 +141,12 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 $(window).on('orientationchange', function(e) {
   // alert('hello')
 
-    $('#follower11').css({
-      left:  e.alpha +30,
-      // top:   e.gamma -10,
-        width: '+=5px',
-        height: '+=5px'
-    });
 
     $('#follower10').css({
-      left:  e.alpha +10,
-      // top:   e.gamma -60,
-        width: '+=5px',
-        height: '+=5px'
+      left:  e.alpha +10
     });
     $('#follower7').css({
-      left:  e.alpha + 40,
-      // top:   e.gamma -30,
-        width: '+=5px',
-        height: '+=5px'
+      left:  e.alpha + 40
     });
 });
 
