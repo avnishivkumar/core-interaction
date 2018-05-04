@@ -2,7 +2,7 @@
 ////////
 
 $(document).bind('mousemove', function(e){
-  console.log(e.pageX);
+//  console.log(e.pageX);
     $('#follower').css({
       left:  e.pageX +560,
       top:   e.pageY+200,
@@ -11,7 +11,7 @@ $(document).bind('mousemove', function(e){
 });
 
 $(document).bind('mousemove', function(e){
-  console.log(e.pageX);
+//  console.log(e.pageX);
     $('#follower2').css({
        left:  e.pageX - 600,
        top:   e.pageY -750,
@@ -19,7 +19,7 @@ $(document).bind('mousemove', function(e){
     });
 
     $(document).bind('mousemove', function(e){
-  console.log(e.pageX);
+//  console.log(e.pageX);
     $('#follower3').css({
       left:  e.pageX +100,
       top:   e.pageY -30,
@@ -28,7 +28,7 @@ $(document).bind('mousemove', function(e){
 
 });
 $(document).bind('mousemove', function(e){
-  console.log(e.pageX);
+//  console.log(e.pageX);
     $('#follower4').css({
        left:  e.pageX + 100,
        top:   e.pageY+200
@@ -36,7 +36,7 @@ $(document).bind('mousemove', function(e){
 });
 
 $(document).bind('mousemove', function(e){
-  console.log(e.pageX);
+//  console.log(e.pageX);
     $('#follower5').css({
        left:  e.pageX + 1000,
        top:   e.pageY+1000,
@@ -105,6 +105,11 @@ $(document).on('mousemove', function(e) {
     });
 });
 
+function map (num, in_min, in_max, out_min, out_max) {
+  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+
 var mouseX = 0, mouseY = 0, limitX = 40-15, limitY = 40-15;
 $(window).mousemove(function(e){
    mouseX = Math.min(e.pageX, limitX);
@@ -116,11 +121,47 @@ var follower = $("#cover4");
 var xp = 100, yp = 1000;
 $(document).on('mousemove', function(e) {
 
-    xp += (mouseX - xp) / 1;
-    yp += (mouseY - yp) / 1;
-    follower.css({left:xp, top:yp});
+//map(num, 0, 10, -50, 50)
+//70,15
+var newX = map(e.pageX, 0, $(window).width(), 45, 95)
+var newY = map(e.pageY, 0, $(window).height(), -10, 40)
+//40, -10
+// follower.css({left: })
+
+    // xp += (mouseX - xp) / 1;
+    // yp += (mouseY - yp) / 1;
+    // console.log(limitX)
+    follower.css({left:newX, top:newY});
 
 });
+
+
+
+
+$(document).on('deviceorientation', function(e) {
+    $('#follower11').css({
+      left:  e.beta +300,
+      top:   e.gamma -100,
+        width: '+=5px',
+        height: '+=5px'
+    });
+
+    $('#follower10').css({
+      left:  e.beta +100,
+      top:   e.gamma -600,
+        width: '+=5px',
+        height: '+=5px'
+    });
+    $('#follower7').css({
+      left:  e.beta + 400,
+      top:   e.gamma -300,
+        width: '+=5px',
+        height: '+=5px'
+    });
+});
+
+
+
 
 // $(document).on('mousemove', function(e) {
 //     $("#cover4").css({
@@ -175,7 +216,7 @@ $( function() {
           .then(function(jsonData) {
               // log the data
                   render(jsonData);
-                  console.log(jsonData);
+                //  console.log(jsonData);
               });
 
 
@@ -188,7 +229,7 @@ $( function() {
           .then(function(jsonData) {
               // log the data
               //render(jsonData);
-              console.log(jsonData);
+          //    console.log(jsonData);
           });
 
           var originalHome = document.querySelector('.originalhome')
