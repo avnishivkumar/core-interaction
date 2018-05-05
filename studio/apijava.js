@@ -129,5 +129,5 @@ function renderEpisode(data) {
   epinameSpan.innerText= data["0"].name
     episeasonSpan.innerText= data["0"].season
       epinoSpan.innerText= data["0"].number
-        episumSpan.innerText= data["0"].summary
+        episumSpan.innerHTML= data["0"].summary
 }
