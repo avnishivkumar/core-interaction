@@ -1666,7 +1666,7 @@ text-align: justify;
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 980px) {
   .a6 {
     line-height: 240px;
     font-size: 100px;
