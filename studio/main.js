@@ -46,8 +46,8 @@ $(document).bind('mousemove', function(e){
 
 $(document).on('mousemove', function(e) {
     $('#follower5').css({
-      left:  e.pageX -300,
-      top:   e.pageY -100,
+      left:  e.pageX -500,
+      top:   e.pageY -400,
         width: '+=5px',
         height: '+=5px'
     });
@@ -225,6 +225,17 @@ $( function() {
           var originalHome = document.querySelector('.originalhome')
 
           function render(data) {
-            originalHome.src=data.image.original }
+            originalHome.src=data.image.original }   ;
 
-            // Shows: sun, mon, tues, wed, thurs, fri, sat
+
+
+            var images = ['bm.jpg', 'batesmotel.jpg', 'castle.jpg'];
+
+            $('#follower5').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+            var images = ['100.jpg', 'fa3.jpg', 'fa11.jpg'];
+
+            $('#follower9').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+            var images = ['fa14.jpg', 'feud.jpg', 'legion.jpg'];
+
+            $('#follower10').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+            var images = ['p3.jpg', 'p7.jpg', 'p14.jpg'];
