@@ -135,12 +135,12 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 
 });
 
-window.ondevicemotion = function (event) {
-  // alert(event.accelerationIncludingGravity.x);
-  $('#follower10').css({
-    left: event.alpha.accelerationIncludingGravity.x + 10;
-  });
-}
+// window.ondevicemotion = function (event) {
+//   // alert(event.accelerationIncludingGravity.x);
+//   $('#follower10').css({
+//     left: event.alpha.accelerationIncludingGravity.x + 10;
+//   });
+// }
 
 
 $(window).on('orientationchange', function(event) {
@@ -234,26 +234,32 @@ $( function() {
 
 
 
-            var images = ['fa9.jpg', 'twire.jpg', 'batesmotel.jpg', 'poster2.jpg'];
+var images = ['fa9.jpg', 'twire.jpg', 'batesmotel.jpg', 'poster2.jpg'];
+$('#follower').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
-      $('#follower').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
-
-      var images = ['fa12.jpg', 'fa14.jpg', 'feud.jpg', 'jj.jpg'];
-
+var images = ['fa12.jpg', 'fa14.jpg', 'feud.jpg', 'jj.jpg'];
 $('#follower2').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 var images = ['legion.jpg', 'p3.jpg', 'p4.jpg', 'fa13.jpg'];
-
 $('#follower4').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 var images = ['p13.jpg', 'p1.jpg', 'fa7.jpg', 'fa4.jpg'];
-
 $('#follower9').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 var images = ['fa2.jpg', 'p8.jpg', 'p11.jpg', 'p12.jpg'];
-
 $('#follower10').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 var images = ['fa8.jpg', 'got1.jpg', 'p2.jpg', '100.jpg'];
-
 $('#follower5').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+var videos = ['videoplayback (3).mp4', 'videoplayback (2).mp4', 'videoplayback (5).mp4', 'videoplayback.mp4'];
+var video7 = document.getElementById('video7');
+video7.src = 'assets/media/' + videos[Math.floor( Math.random() * videos.length )];
+
+var videos = ['gotvid.mp4', 'offfvideo.mp4', 'hotel.mp4', 'snlvid.mp4'];
+var video6 = document.getElementById('video6');
+video6.src = 'assets/media/' + videos[Math.floor( Math.random() * videos.length )];
+
+var videos = ['videoplayback (8).mp4', 'videoplayback (6).mp4', 'videoplayback (4).mp4', 'videoplayback (9).mp4'];
+var video9 = document.getElementById('video9');
+video9.src = 'assets/media/' + videos[Math.floor( Math.random() * videos.length )];
