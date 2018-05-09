@@ -18,7 +18,7 @@ body, html {
   position: absolute;
   height: 1000px;
   width: 2200px;
-  opacity: 0.15;
+  opacity: 0.11;
   z-index: -100;
 }
 #cover1 {
@@ -468,6 +468,9 @@ background-color: none;
 
   }
 
+.fingif {
+  visibility: hidden;
+}
   /* Change color of dropdown links on hover */
   .dropdown-content2 a:hover {}
 
@@ -1277,7 +1280,7 @@ position: relative;
   opacity: 0.4;
   left:400px;
    top:400px;
-   transform: scale(0.5);
+   transform: scale(0.2);
    height: 200px;
    width:200px;
      position: absolute;
@@ -1333,44 +1336,51 @@ width: 1200px;
 
 #follower2
 {
-  opacity: 0.4;
+  background-repeat: no-repeat;
+
   left:400px;
    top:400px;
-   height: 800px;
-   width: 500px;
-  transform: scale(0.5);
+   height: 1200px;
+   width: 1200px;
+  transform: scale(0.4);
     position: absolute;
     float: left;
     transition:all 2s;
     z-index: -1;
+}
+.following {
+  opacity: 0.3;
 }
 #follower3
 {
-  opacity: 0.4;
-  left:400px;
-   top:400px;
-  transform: scale(0.8);
-    position: absolute;
-    float: left;
-    transition:all 2s;
-    z-index: -1;
-}
-#follower4
-{
-  opacity: 0.4;
+
   left:400px;
    top:400px;
   transform: scale(0.4);
     position: absolute;
     float: left;
-    transition:all 0.7s;
+    transition:all 2.2s;
+    z-index: -1;
+}
+#follower4
+{
+  background-repeat: no-repeat;
+
+  left:400px;
+   top:400px;
+   height: 1000px;
+   width: 1000px;
+  transform: scale(0.7);
+    position: absolute;
+    float: left;
+    transition:all 0.5s;
     z-index: -1;
 }
 
 #follower5
 {
   background-repeat: no-repeat;
-  opacity: 0.4;
+
   left:500px;
    top:400px;
    height: 900px;
@@ -1384,7 +1394,7 @@ width: 1200px;
 
 #follower6
 {
-  opacity: 0.4;
+
   left:400px;
    top:400px;
   transform: scale(0.9);
@@ -1396,33 +1406,33 @@ width: 1200px;
 
 #follower7
 {
-  opacity: 0.4;
+
   left:400px;
    top:400px;
   transform: scale(0.9);
     position: absolute;
     float: left;
-    transition:all 0.5s;
+    transition:all 0.3s;
     z-index: -1;
 }
 
 
 #follower8
 {
-  opacity: 0.4;
+
   left:400px;
    top:400px;
   transform: scale(0.9);
     position: absolute;
     float: left;
-    transition:all 1s;
+    transition:all 1.2s;
     z-index: -1;
 }
 
 #follower9
 {
   background-repeat: no-repeat;
-  opacity: 0.4;
+
   left:1000px;
    top:100px;
    height: 1000px;
@@ -1437,15 +1447,15 @@ width: 1200px;
 #follower10
 {
   background-repeat: no-repeat;
-  opacity: 0.4;
+
   left:400px;
    top:400px;
    height: 1000px;
-   width: 600px;
+   width: 1200px;
   transform: scale(0.5);
     position: absolute;
     float: left;
-    transition:all 2s;
+    transition:all 1.9s;
     z-index: -1;
 }
 
@@ -1454,13 +1464,27 @@ width: 1200px;
   width: 350px;
 height: 400px;
 background-color: transparent;
-  opacity: 0.4;
+
   left:600px;
    top:400px;
   transform: scale(0.6);
     position: absolute;
     float: left;
-    transition:all 2s;
+    transition:all 2.6s;
+    z-index: -1;
+}
+#follower
+{
+  background-repeat: no-repeat;
+
+  left:400px;
+   top:400px;
+   height: 1000px;
+   width: 1200px;
+  transform: scale(0.5);
+    position: absolute;
+    float: left;
+    transition:all 2.1s;
     z-index: -1;
 }
 
@@ -1885,6 +1909,15 @@ text-align: justify;
 
 @media (max-width: 980px)
  {
+   .fingif{
+     visibility: visible;
+     height: 2570px;
+     width: 1650px;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     z-index: -1;
+   }
 .episumspan{
   font-size: 100px;
 }
@@ -2100,11 +2133,12 @@ left: 400px;
   font-size: 110px;
   }
   .covercontainer{
-    visibility: hidden;
+visibility: hidden;
   }
   .cover1 {
     transform: scale(2) rotate(-90deg);
     top: 850px;
+    position: absolute;
   }
   #follower1{
     visibility: hidden;
@@ -2113,6 +2147,12 @@ left: 400px;
     visibility: hidden;
   }
   #follower3{
+    visibility: hidden;
+  }
+  #follower{
+    visibility: hidden;
+  }
+  #follower11{
     visibility: hidden;
   }
   #follower4{
@@ -2125,6 +2165,7 @@ left: 400px;
     visibility: hidden;
   }
   #follower7{
+    visibility: hidden;
 
   }
   #follower8{
@@ -2134,7 +2175,7 @@ left: 400px;
     visibility: hidden;
   }
   #follower10{
-
+visibility: hidden;
   }
   #follower{
     visibility: hidden;

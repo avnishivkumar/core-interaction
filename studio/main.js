@@ -4,8 +4,8 @@
 $(document).bind('mousemove', function(e){
 //  console.log(e.pageX);
     $('#follower').css({
-      left:  e.pageX +560,
-      top:   e.pageY+200,
+      left:  e.pageX +360,
+      top:   e.pageY+0,
 
     });
 });
@@ -13,8 +13,8 @@ $(document).bind('mousemove', function(e){
 $(document).bind('mousemove', function(e){
 //  console.log(e.pageX);
     $('#follower2').css({
-       left:  e.pageX - 600,
-       top:   e.pageY -750,
+       left:  e.pageX - 400,
+       top:   e.pageY -450,
 
     });
 
@@ -30,8 +30,8 @@ $(document).bind('mousemove', function(e){
 $(document).bind('mousemove', function(e){
 //  console.log(e.pageX);
     $('#follower4').css({
-       left:  e.pageX + 100,
-       top:   e.pageY+200
+       left:  e.pageX + -30,
+       top:   e.pageY-500
     });
 });
 
@@ -46,8 +46,8 @@ $(document).bind('mousemove', function(e){
 
 $(document).on('mousemove', function(e) {
     $('#follower5').css({
-      left:  e.pageX -500,
-      top:   e.pageY -400,
+      left:  e.pageX -50,
+      top:   e.pageY -100,
         width: '+=5px',
         height: '+=5px'
     });
@@ -81,7 +81,7 @@ $(document).on('mousemove', function(e) {
 });
 $(document).on('mousemove', function(e) {
     $('#follower9').css({
-      left:  e.pageX -300,
+      left:  e.pageX -600,
       top:   e.pageY -300,
         width: '+=5px',
         height: '+=5px'
@@ -89,8 +89,8 @@ $(document).on('mousemove', function(e) {
 });
 $(document).on('mousemove', function(e) {
     $('#follower10').css({
-      left:  e.pageX +100,
-      top:   e.pageY -600,
+      left:  e.pageX +500,
+      top:   e.pageY -400,
         width: '+=5px',
         height: '+=5px'
     });
@@ -229,13 +229,26 @@ $( function() {
 
 
 
-            var images = ['bm.jpg', 'batesmotel.jpg', 'castle.jpg'];
+            var images = ['fa9.jpg', 'twire.jpg', 'batesmotel.jpg', 'poster2.jpg'];
 
-            $('#follower5').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
-            var images = ['100.jpg', 'fa3.jpg', 'fa11.jpg'];
+      $('#follower').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
-            $('#follower9').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
-            var images = ['fa14.jpg', 'feud.jpg', 'legion.jpg'];
+      var images = ['fa12.jpg', 'fa14.jpg', 'feud.jpg', 'jj.jpg'];
 
-            $('#follower10').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
-            var images = ['p3.jpg', 'p7.jpg', 'p14.jpg'];
+$('#follower2').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+var images = ['legion.jpg', 'p3.jpg', 'p4.jpg', 'fa13.jpg'];
+
+$('#follower4').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+var images = ['p13.jpg', 'p1.jpg', 'fa7.jpg', 'fa4.jpg'];
+
+$('#follower9').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+var images = ['fa2.jpg', 'p8.jpg', 'p11.jpg', 'p12.jpg'];
+
+$('#follower10').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+var images = ['fa8.jpg', 'got1.jpg', 'p2.jpg', '100.jpg'];
+
+$('#follower5').css({'background-image': 'url(https://avnishivkumar.github.io/core-interaction/studio/assets/media/' + images[Math.floor(Math.random() * images.length)] + ')'});
