@@ -97,7 +97,7 @@ h1 {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   opacity: 0.3;
-  animation: nudge  infinite alternate;
+  animation: nudge  infinite ease;
   animation-duration: ;
 }
 
@@ -111,16 +111,28 @@ h1 {
 }
 
 @keyframes nudge {
-  0%, 100% {
-    transform: translate(800px, 0px);
+  0% {
+    transform: translate(100px, 100px);
+  }
+
+  20% {
+    transform: translate(100px, 200px);
+  }
+
+  40%{
+    transform: translate(100px, 300px);
+  }
+
+  60% {
+    transform: translate(100px, 400px);
+  }
+
+  80% {
+    transform: translate(100px, 500px);
   }
 
   100% {
-    transform: translate(100px, 0px);
-  }
-
-  100%{
-    transform: translate(150px, 0px);
+    transform: translate(100px, 600px);
   }
 }
 

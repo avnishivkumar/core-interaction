@@ -137,6 +137,9 @@ var newY = map(e.pageY, 0, $(window).height(), -10, 40)
 
 window.ondevicemotion = function (event) {
   alert(event.accelerationIncludingGravity.x);
+  $('#follower10').css({
+    left: event.alpha.accelerationIncludingGravity.x + 10;
+  });
 }
 
 
