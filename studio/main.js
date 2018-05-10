@@ -230,7 +230,7 @@ $( function() {
           var originalHome = document.querySelector('.originalhome')
 
           function render(data) {
-            originalHome.src=data.image.original }   ;
+            originalHome.src=data.image.original };
 
 
 

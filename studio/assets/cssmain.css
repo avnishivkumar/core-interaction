@@ -28,9 +28,9 @@ body, html {
   top: -100px;
   left: -100px;
   position: absolute;
-  height: 1000px;
+  height: 2000px;
   width: 2200px;
-  opacity: 0.11;
+  opacity: 0.12;
   z-index: -100;
 }
 #cover1 {
@@ -1277,7 +1277,7 @@ position: relative;
   float: right;
   position: absolute;
   margin: 30px;
-  top: 100px;
+  top: 400px;
   left: 0px;
   opacity: 0.2;
 }
@@ -1390,7 +1390,7 @@ width: 1200px;
     z-index: -1;
 }
 .following {
-  opacity: 0.3;
+  opacity: 0.35;
 }
 #follower3
 {
@@ -1933,8 +1933,8 @@ text-align: justify;
 }
 #frightcol {
   position: absolute;
-  top:600px;
-  left: 500px;
+  top:420px;
+  left: 570px;
   margin-left: 0px;
 }
 #rightcol {
