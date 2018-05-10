@@ -263,3 +263,6 @@ video6.src = 'assets/media/' + videos[Math.floor( Math.random() * videos.length 
 var videos = ['videoplayback (8).mp4', 'videoplayback (6).mp4', 'videoplayback (4).mp4', 'videoplayback (9).mp4'];
 var video9 = document.getElementById('video9');
 video9.src = 'assets/media/' + videos[Math.floor( Math.random() * videos.length )];
+
+
+// When the user scrolls the page, execute myFunction
