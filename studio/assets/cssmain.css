@@ -314,31 +314,25 @@ z-index: 100;
   width: 100%;
 }
 
+#SNLHEAD1
+{
+  visibility: hidden;
+}
 
 @keyframes nudge {
   0% {
-    transform: translate(100px, 100px);
+    transform: translate(300px, 100px);
   }
 
-  20% {
-    transform: translate(100px, 200px);
+  50% {
+    transform: translate(800px, 100px);
   }
-
-  40%{
-    transform: translate(100px, 300px);
-  }
-
-  60% {
-    transform: translate(100px, 400px);
-  }
-
-  80% {
-    transform: translate(100px, 500px);
-  }
-
   100% {
-    transform: translate(100px, 600px);
+    transform: translate(300px, 100px);
   }
+
+
+
 }
 
 .original:hover {filter: grayscale(0%);
@@ -368,6 +362,7 @@ h101 {
   font-family: "dazzle-unicase",sans-serif;
   line-height: 200px;
   margin-bottom: 100px;
+
 
 
 
@@ -474,6 +469,15 @@ background-color: transparent;
 
 
  }
+ #ul111 {
+
+   text-align: center;
+   list-style-type: none;
+
+
+
+
+ }
  ul {
    list-style-type: none;
  }
@@ -489,6 +493,7 @@ z-index: 100;
 
 
  }
+
 
 ::selection
 {
@@ -1462,7 +1467,7 @@ position: relative;
 }
 #ahs2 {
   position: absolute;
-  top: 2000px;
+  top: -200px;
   left: 150px;
 }
 #dis10 {
@@ -1481,12 +1486,12 @@ position: relative;
 }
 #ahs3 {
   position: absolute;
-  top: 800px;
+  top: -700px;
   left: 50px;
 }
 #ahs1 {
   position: absolute;
-  top: 1500px;
+  top: 500px;
   left: -300px;
 }
 
@@ -2221,6 +2226,40 @@ position: absolute;
     left: -10px;
     top: 30px;
   }
+  #t1 {
+    left: 10px;
+    font-size: 70px;
+    position: absolute;
+
+  }
+  #t2 {
+    left: 10px;
+    top: 80px;
+    position: absolute;
+    font-size: 90px;
+
+  }
+  #t3 {
+    left: 10px;
+    top: 160px;
+    position: absolute;
+    font-size: 90px;
+
+  }
+  #t4 {
+    left: 10px;
+    top: 250px;
+    position: absolute;
+    font-size: 70px;
+
+  }
+  #t5 {
+    left: 10px;
+    top: 330px;
+    position: absolute;
+    font-size: 90px;
+
+  }
   #SNLHEAD2{
 
     left: -80px;
@@ -2260,8 +2299,8 @@ position: absolute;
    #small5 {
      left: 0px;
    }
-   .name {
-     transform: rotate(90deg);
+   h109 {
+     transform: skewY(90deg);
    }
    .fingif{
      visibility: visible;
@@ -2396,13 +2435,13 @@ left: 0px;
   color: white;
 }
    #dd1{
-     top: 920%;
+     top: 720%;
      left: -80px;
-     transform: scale(0.8);
+     transform: scale(1.6);
      margin-bottom: 400px;
    }
    #ff1{
-     top: 620%;
+     top: 590%;
      left: 10px;
      transform: scale(0.99);
    }
@@ -2412,7 +2451,7 @@ left: 0px;
      transform: scale(0.8);
    }
    #ff3{
-      top:760%;
+      top:520%;
      left: 0px;
      transform: scale(0.8);
    }
@@ -2444,6 +2483,11 @@ left: 0px;
   left: -100px;
   transform: scale(0.8);
 }
+#ve11{
+  top: 90%;
+  left: -100px;
+  transform: scale(0.8);
+}
 
 #ve5 {
   left: -100px;
@@ -2463,8 +2507,8 @@ left: 0px;
   margin-bottom: 400px;
 }
    #atl1{
-     top: 940%;
-     left: -30px;
+     top: 750%;
+     left: -70px;
      transform: scale(0.8);
    }
    #atl2{
@@ -2473,19 +2517,19 @@ left: 0px;
      transform: scale(0.7);
    }
    #atl3{
-     top: 790%;
+     top: 660%;
      left: -80px;
 transform: scale(0.8);
    }
    #atl4{
-     top: 860%;
+     top: 700%;
      left: -80px;
      transform: scale(0.8);
 
    }
    #atl5{
      margin-bottom: 400px;
-     top: 730%;
+     top: 630%;
      left: -60px;
      transform: scale(0.8);
 
@@ -2506,7 +2550,7 @@ transform: scale(0.8);
       transform: scale(0.8);
    }
    #dd6{
-     top: 40%;
+     top: 50%;
      left: 120px;
       transform: scale(0.7);
    }
@@ -2516,19 +2560,19 @@ transform: scale(0.8);
 
    }
    #ahs1{
-     top: 6000%;
-     left: -30px;
-     transform: scale(1.5);
+     top: 100%;
+     left: -100px;
+     transform: scale(0.8);
    }
    #ahs2{
-     top: 4100%;
-     left: 200px;
-     transform: scale(1.5);
+     top: 120%;
+     left: -100px;
+     transform: scale(0.8);
    }
    #ahs3{
-      top: 4100%;
-      left: 200px;
-      transform: scale(1.5);
+      top: 150%;
+      left: -80px;
+      transform: scale(0.8);
 
       margin-bottom: 400px;
 
@@ -2546,6 +2590,7 @@ margin-left: -10px;
     line-height: 130px;
     font-size: 30px;
   }
+
   #snl1
   {
     transform: scale(0.8);
@@ -2600,6 +2645,7 @@ left: -50px;
     visibility: hidden;
   }
   h201{
+    visibility: hidden;
     width: 200%;
     margin-top: 50%;
     margin-left: 40px;
@@ -2716,6 +2762,7 @@ visibility: hidden;
 
   }
   h101 {
+    visibility: hidden;
     position: absolute;
     margin-left: 50px;
    width: 200%;
@@ -2879,7 +2926,7 @@ line-height: 190px;
   }
 
   .column {
-    top: 260px;
+    top: 599px;
     margin-left: 10px;
         width: 1200px;
         font-size: 30px;
@@ -2909,7 +2956,7 @@ line-height: 190px;
   }
 
   .fcolumn {
-    top: 260px;
+    top: 660px;
     margin-left: 10px;
         width: 1200px;
         font-size: 30px;
