@@ -486,7 +486,7 @@ li {
  }
 
  #l1 {
-   font-size: 30px;
+   font-size: 50px;
 color: darkgrey;
 z-index: 100;
 
@@ -2227,37 +2227,43 @@ position: absolute;
     top: 30px;
   }
   #t1 {
+
+    transform: scaleY(2);
     left: 10px;
-    font-size: 70px;
+    font-size: 60px;
     position: absolute;
 
   }
   #t2 {
+      transform: scaleY(2);
     left: 10px;
-    top: 80px;
+    top: 140px;
     position: absolute;
-    font-size: 90px;
+    font-size: 80px;
 
   }
   #t3 {
+    transform: scaleY(2);
     left: 10px;
-    top: 160px;
+    top: 290px;
     position: absolute;
     font-size: 90px;
 
   }
   #t4 {
+    transform: scaleY(2);
     left: 10px;
-    top: 250px;
+    top: 440px;
     position: absolute;
     font-size: 70px;
 
   }
   #t5 {
+      transform: scaleY(2);
     left: 10px;
-    top: 330px;
+    top: 610px;
     position: absolute;
-    font-size: 90px;
+    font-size: 80px;
 
   }
   #SNLHEAD2{
@@ -2311,6 +2317,15 @@ position: absolute;
      left: 0px;
      z-index: -1;
    }
+   #l1 {
+     font-size: 30px;
+  color: darkgrey;
+  z-index: 100;
+
+
+
+   }
+
     #plus{
       position: fixed;
  left: 34%;
@@ -2456,7 +2471,7 @@ left: 0px;
      transform: scale(0.8);
    }
    #ff4{
-     top:240%;
+     top:210%;
      left: 90px;
      transform: scale(0.8);
    }
