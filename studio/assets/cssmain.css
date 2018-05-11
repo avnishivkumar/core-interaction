@@ -768,6 +768,20 @@ margin-left: 30px;
 }
 
 
+h77 {
+margin-left: 30px;
+
+  position: relative;
+  top: 10px;
+  font-size: 180px;
+  font-family: "dazzle-unicase",sans-serif;
+  text-align: center;
+  color: black;
+  line-height: 160px;
+visibility: hidden;
+}
+
+
 h0 {
   margin-left: 30px;
 
@@ -1625,7 +1639,6 @@ position: relative;
 }
 
 
-
 .covercontainer
 {
     width:2500px;
@@ -2221,6 +2234,7 @@ blockquote {
   top: 900px;
   left: 600px;
 }
+
 #atl1
 {
   top: 900px;
@@ -2303,6 +2317,9 @@ position: absolute;
   h7 {
     font-size: 80px;
   }
+  h77 {
+    font-size: 80px;
+  }
 
 
 }
@@ -2346,6 +2363,47 @@ position: absolute;
 
    }
    #t5 {
+       transform: scaleY(2);
+     left: 10px;
+     top: 610px;
+     position: absolute;
+     font-size: 80px;
+
+   }
+
+   #ts1 {
+     visibility: visible;
+     top: -730px;
+   }
+   #ts2 {
+     visibility: visible;
+       transform: scaleY(2);
+     left: 10px;
+     top: 140px;
+     position: absolute;
+     font-size: 80px;
+
+   }
+   #ts3 {
+     visibility: visible;
+     transform: scaleY(2);
+     left: 10px;
+     top: 290px;
+     position: absolute;
+     font-size: 90px;
+
+   }
+   #ts4 {
+     visibility: visible;
+     transform: scaleY(2);
+     left: 10px;
+     top: 440px;
+     position: absolute;
+     font-size: 70px;
+
+   }
+   #ts5 {
+     visibility: visible;
        transform: scaleY(2);
      left: 10px;
      top: 610px;
@@ -2943,6 +3001,12 @@ line-height: 190px;
     font-size: 220px;
 
   }
+  h77 {
+line-height: 190px;
+    font-size: 220px;
+
+  }
+
 
   h0 {
     margin-top: 10px;
@@ -3120,6 +3184,20 @@ h7 {
   left: -10px;
   line-height: 130px;
 }
+h77 {
+  visibility: visible;
+  top: 100px;
+
+  font-size: 60px;
+  margin-left: 10px;
+  margin-right: 45px;
+
+  margin-top: 10px;
+  top: 10px;
+  left: -10px;
+  line-height: 130px;
+}
+#sn
 #snltitle{
   display: inline-block;
   top: -1600px;
