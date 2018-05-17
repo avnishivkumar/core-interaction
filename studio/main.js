@@ -199,7 +199,7 @@ $( function() {
       var dateString = date.getFullYear() + '-' + (date.getMonth() + 1).pad(2) + '-' + date.getDate().pad(2);
 
       // Shows: sun, mon, tues, wed, thurs, fri, sat
-      var showIds = [49, 1850, 58, 1825, 1864, 751, 18198];
+      var showIds = [49, 1850, 58, 1825, 4, 751, 18198];
       var showId = showIds[day];
 
       // Get Show ID for today
