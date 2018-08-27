@@ -82,7 +82,9 @@
 a:hover {
   color: white;
 }
-
+.no:hover {
+  color: #0000FF;
+}
 .a9{
   color: #0000FF;
    list-style-type: none;
