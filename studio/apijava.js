@@ -12,7 +12,7 @@ var day = date.getDay();
 var dateString = date.getFullYear() + '-' + (date.getMonth() + 1).pad(2) + '-' + date.getDate().pad(2);
 
 // Shows: sun, mon, tues, wed, thurs, fri, sat
-var showIds = [49, 1850, 58, 1825, 4, 751, 18198];
+var showIds = [299, 1850, 58, 1825, 2415, 2488, 37546];
 var showId = showIds[day];
 
 // Get Show ID for today
@@ -49,6 +49,7 @@ var airSpan = document.querySelector('.air')
 var originalHome = document.querySelector('.originalhome')
 var epinameSpan = document.querySelector('.epinamespan')
 var dropdownContent1 = document.querySelector('.dropdown-content1')
+var dropdownContent3 = document.querySelector('.dropdown-content3')
 var dropdownContent2 = document.querySelector('.dropdown-content2')
 var episumSpan = document.querySelector('.episumspan')
 var episeasonSpan = document.querySelector('.episeasonspan')
@@ -92,6 +93,7 @@ function renderShow(data) {
   //document.body.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
   nameSpan.style.fontSize = (30 * data.rating.average) +'px'
   dropdownContent1.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
+  dropdownContent3.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
   dropdownContent2.style.backgroundColor = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
   nameSpan.style.color = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
   document.body.style.color = 'hsl('+ data.rating.average * data.rating.average * data.rating.average * data.rating.average +',50%,50%)'
